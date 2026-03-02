@@ -1,0 +1,27 @@
+/* ========================= */
+/* SCROLL REVEAL ANIMATION */
+/* ========================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================= */
+/* INFINITE LOGO SCROLL */
+/* ========================= */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,111 @@
+/* ===========================
+   FULL PAGE GRADIENT
+=========================== */
+
+body {
+  margin: 0;
+  background: linear-gradient(to top,#ffffff, rgb(244, 242, 242), rgb(222, 221, 221));
+}
+/* Add spacing from navbar and footer */
+.solutions-page {
+  padding-top: 140px;
+  padding-bottom: 120px;
+}
+
+
+
+/* Center container */
+.solutions-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* ===========================
+   SOLUTION BOX
+=========================== */
+
+.solution-box {
+  display: flex;
+  align-items: flex-start;
+  font: 20px;
+  text-align:justify;
+  background: #fbfafa; /* greyish shade */
+  border: 2px solid black;
+  border-radius: 55px;
+  box-shadow: #333 0px 10px 30px;
+  padding: 70px;
+  gap: 50px;
+}
+
+/* Alternate layouts */
+.image-right {
+  flex-direction: row;
+}
+
+.image-left {
+  flex-direction: row-reverse;
+}
+
+/* ===========================
+   TEXT SECTION
+=========================== */
+
+.solution-text {
+  flex: 1;
+}
+
+.common-topic {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.solution-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.solution-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ===========================
+   IMAGE SECTION
+=========================== */
+
+.solution-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.solution-img img {
+  width: 100%;
+  max-width: 500px;     /* reduced width */
+  height: 450px;        /* controlled height */
+  border-radius: 20px;
+  object-fit: cover;
+}
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+  .solution-box {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .solution-img img {
+    max-width: 280px;
+  }
+}

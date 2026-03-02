@@ -1,0 +1,24 @@
+:root {
+  --primary: white;
+  --secondary: #d8e2ec;
+  --accent: #fbfbfb;
+  --background: #f4f7fa;
+  --text-dark: #2f3e46;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  color: var(--text-dark);
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.5px;
+}

@@ -1,0 +1,346 @@
+.about-page {
+  padding: 100px 40px;
+  background: rgb(222, 221, 221);
+  min-height: 100vh;
+}
+
+/* 3 + 3 grid */
+.team-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.team-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.03);
+}
+/* Image */
+.team-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.8),
+    transparent
+  );
+
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.overlay p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* Description box */
+.member-description {
+  background: white;
+  text-align: center; 
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-top: 15px;
+  animation: fadeIn 0.3s ease;
+}
+/* ============================= */
+/* MODAL */
+/* ============================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: rgb(217, 238, 243);
+  width: 500px;
+  max-width: 90%;
+  padding: 40px;
+  border: 3px solid black;
+  border-radius: 20px;
+  text-align: center; 
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+.modal-box p {
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Top LinkedIn Icon */
+.linkedin-top {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 22px;
+  color: #0a66c2;
+}
+
+.linkedin-top:hover {
+  color: #004182;
+}
+
+/* Modal image */
+.modal-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 1000px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.modal-box h2 {
+  margin: 10px 0 5px;
+}
+
+.modal-box h4 {
+  margin: 0 0 20px;
+  font-weight: 500;
+  color: #555;
+}
+
+.modal-description {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.linkedin-icon {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 24px;
+  color: #0a66c2;
+}
+
+.linkedin-icon:hover {
+  color: #004182;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ================= NAVBAR STYLE INFO CARDS ================= */
+
+.premium-cards-wrapper {
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto 100px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 3000px;
+}
+
+.premium-card {
+  width: 100%;
+  max-width: 900px;   /* control horizontal length */
+  height: 250px;      /* fixed vertical width (height) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 60px;
+  border-radius: 3000px;
+  background: white;
+  border: 3px solid black;
+  transition: all 0.3s ease;
+
+}
+
+/* Hover */
+.premium-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Text Section */
+.premium-text {
+  flex: 1;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.premium-text h2 {
+  margin-bottom: 10px;
+}
+
+.premium-text p {
+  line-height: 1.6;
+  text-align: justify; 
+  color: #333;
+}
+
+/* Smaller Image */
+.premium-image-wrapper {
+  width: 80px;   /* smaller */
+  height: 80px;  /* smaller */
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.premium-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  align-items: center;
+}
+/* Responsive */
+@media (max-width: 1100px) {
+  .premium-cards-wrapper {
+    flex-direction: column;
+  }
+}
+/* ========================= */
+/* PARTNERS SECTION */
+/* ========================= */
+.partners {
+  width: 500vw; /* full viewport width */
+  max-width: 100%; /* prevent any max-width restrictions */
+  margin-top: 40px;  /* reduced spacing above */
+  text-align: center;
+  background: white;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: none; /* remove border if you want edge-to-edge */
+  box-shadow: none; /* remove shadow if you want it flush */
+  padding: 60px 0; /* vertical spacing for content */
+  z-index: 1000;
+}
+
+.partners h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.partner-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partner-grid img {
+  height: 60px;
+  transition: 0.3s ease;
+}
+
+.partner-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.partner-section {
+  width: 100%;
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+.partner-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.partner-text {
+  flex: 1;
+}
+
+.partner-text h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.partner-text p {
+  margin-bottom: 18px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.partner-image {
+  flex: 1;
+}
+
+.partner-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .partner-container {
+    flex-direction: column;
+  }
+
+  .partner-image img {
+    margin-top: 30px;
+  }
+}

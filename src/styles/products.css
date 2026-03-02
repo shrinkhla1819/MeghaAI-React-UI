@@ -1,0 +1,143 @@
+/* ============================= */
+/* PRODUCTS PAGE */
+/* ============================= */
+
+.products-page {
+  min-height: 100vh;
+  padding: 100px 40px;
+
+  background: rgb(222, 221, 221);
+}
+/* ============================= */
+/* PAGE BACKGROUND */
+/* ============================= */
+
+.products-page {
+  padding: 100px 20px;
+  background:  rgb(222, 221, 221);
+}
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.products-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.products-hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.title-line {
+  width: 80px;
+  height: 4px;
+  background: black;
+  margin: 15px auto 0;
+  border-radius: 4px;
+}
+
+/* ============================= */
+/* MAIN WHITE CONTAINER */
+/* ============================= */
+
+.products-container {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 60px;
+  border-radius: 40px;
+  box-shadow: 0 35px 60px rgba(0, 0, 0, 0.12);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 40px;
+  text-align: justify;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+/* ============================= */
+/* PRODUCT CARD */
+/* ============================= */
+
+.product-card {
+  text-align: justify;
+}
+
+.product-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.product-card img:hover {
+  transform: scale(1.03);
+}
+
+.product-card h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.product-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .products-container {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+}
+/* ================= MAIN WRAPPER ================= */
+
+.strategy-ai-wrapper {
+  width: 100%;
+  max-width: 1200px;      /* reduce overall section width */
+  margin: 80px auto;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background: linear-gradient(to top, #fbfafa, #f0f0f0);
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= SECTION SPACING ================= */
+
+.data-strategy-section,
+.ai-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* ================= TEXT ================= */
+
+.strategy-ai-wrapper p {
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* ================= LIST ================= */
+
+.strategy-ai-wrapper ul {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 16px;
+}

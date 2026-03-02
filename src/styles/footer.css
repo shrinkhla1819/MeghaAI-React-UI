@@ -1,0 +1,326 @@
+.footer {
+  background: linear-gradient(to right,#acacad, white, #8d8d8e); /* Dark background like image */
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #9ca3af;
+}
+
+/* ---------------- Logo Section ---------------- */
+
+.footer-logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.divider {
+  height: 1px;
+  background: #444;
+  flex: 1;
+  max-width: 250px;
+}
+
+.footer-logo {
+  height: 110px;   /* bigger */
+  transition: 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- Contact Info ---------------- */
+
+.footer-contact p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #181717;
+}
+
+/* ---------------- LinkedIn Section ---------------- */
+
+.linkedin-section {
+  margin-top: 25px;
+}
+
+.linkedin-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #2c2c2c;
+  border-radius: 50%;
+  color: #d0bcbc;
+  font-size: 18px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.linkedin-icon:hover {
+  background: #0a66c2;
+  transform: scale(1.05);
+}
+
+.address {
+  max-width: 750px;
+  margin: 15px auto 0;
+  font-size: 13px;
+  color: #534949;
+  line-height: 1.6;
+}
+
+/* ---------------- Bottom Actions ---------------- */
+
+.footer-bottom-actions {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #5207f5;
+}
+
+.footer-bottom-actions span {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-bottom-actions span:hover {
+  color: #e50914; /* subtle red hover like image */
+}
+
+/* ---------------- Cards ---------------- */
+
+.footer-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #2c2c2c;
+  padding: 18px;
+  border-radius: 10px;
+  min-width: 220px;
+  color: #e5e7eb;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #333;
+  transform: translateY(-4px);
+}
+
+.card h4 {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 13px;
+  color: #b5b5b5;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background: #e50914;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #c40812;
+}
+
+/* ---------------- Modal ---------------- */
+
+.apply-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apply-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.apply-box h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.apply-box input,
+.apply-box select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.apply-box button {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.apply-box button:first-of-type {
+  background: #e50914;
+  color: rgb(29, 28, 28);
+}
+
+.apply-box button:last-of-type {
+  background: #161616;
+}
+/* ---------------- Copyright ---------------- */
+
+.footer-copyright {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 13px;
+  color: #000000;
+  letter-spacing: 0.5px;
+}
+/* ---------- 3 Column Action Row ---------- */
+
+.footer-action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0px;          /* reduced from 20px (moves upward) */
+  padding: 0 15%;            /* less side padding for better balance */
+  position: relative;
+}
+.footer-action-left,
+.footer-action-right {
+  width: 25%;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-action-left {
+  text-align: left;
+}
+
+.footer-action-right {
+  text-align: right;
+}
+
+.footer-action-left span,
+.footer-action-right span {
+  transition: 0.3s;
+}
+
+.footer-action-left span:hover,
+.footer-action-right span:hover {
+  color: #e50914;
+}
+
+.footer-action-center {
+  width: 50%;
+  text-align: center;
+}
+
+.footer-action-center .address {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #534949;
+}
+
+/* ---------- Dropdown ---------- */
+/* ---------- Headings ---------- */
+
+.footer-action-left h4,
+.footer-action-right h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  color: #0a0a0a;
+}
+
+/* ---------- Permanent Links ---------- */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.footer-links div {
+  cursor: pointer;
+  color: #000000;
+  transition: 0.3s ease;
+}
+
+.footer-links div:hover {
+  color: #7b8181;
+  transform: translateX(4px);
+}
+
+/* Right column alignment */
+
+.footer-action-right {
+  text-align: right;
+}
+
+.right-links {
+  align-items: flex-end;
+}
+.footer-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+/* Wrapper for careers to avoid overlap */
+.footer-careers-wrapper {
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* Improve card spacing */
+.footer-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Make cards slightly bigger */
+.card {
+  background: #2c2c2c;
+  padding: 22px;
+  border-radius: 12px;
+  min-width: 240px;
+  color: #e5e7eb;
+  transition: 0.3s ease;
+}
+
+/* Ensure footer grows with content */
+.footer {
+  padding-bottom: 60px;
+}

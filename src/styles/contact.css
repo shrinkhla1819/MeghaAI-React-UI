@@ -1,0 +1,113 @@
+/* ===== CONTACT PAGE ===== */
+
+.contact-page {
+  background:  rgb(222, 221, 221);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px 40px 80px 40px;
+}
+
+.contact-heading {
+  font-size: 32px;
+  padding: 80px 40px 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgb(11, 11, 11);
+}
+
+.row {
+  margin-bottom: 25px;
+}
+
+.two-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.two-columns input {
+  flex: 1;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  font-size: 15px;
+  background: #ffffff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 0 2px rgba(74, 108, 247, 0.2);
+}
+
+.phone-group {
+  display: flex;
+  gap: 12px;
+}
+
+.phone-group select {
+  width: 120px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #c2c1c1, #e7e6e6, #c2c1c1);
+  color: rgb(1, 1, 1);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+/* ===== CONTACT CTA BELOW FORM ===== */
+
+/* ===== CTA BELOW FORM ===== */
+.contact-cta {
+  text-align: center;
+  margin: 40px 0; /* space from form and footer */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+
+.contact-cta h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
